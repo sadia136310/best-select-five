@@ -1,15 +1,15 @@
 document.getElementById('total-calculate').addEventListener('click', function () {
 
     const managerField = inputField('manager');
-    const CoachField = inputField('coach');
-    const totalCalculate = managerField + CoachField;
+    const coachField = inputField('coach');
+    const totalCalculate = managerField + coachField;
 
 
 
-    const playerExpenseIs = getExpenseElementById('player-expense')
-    const final = playerExpenseIs + totalCalculate;
+    const totalAmountIs = getExpenseElementById('player-expense')
+    const finalAmount = totalAmountIs + totalCalculate;
 
-    const otherAmount = setElementById('final-total', final);
+    setElementById('final-total', finalAmount);
 
 
 

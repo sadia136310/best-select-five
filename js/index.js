@@ -5,13 +5,13 @@ function display(allPlayer) {
     const body = document.getElementById("name-update");
     body.innerHTML = "";
 
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 0; i < 5; i++) {
         // console.log(playerArray[i].playerName);
         const name = playerArray[i].playerName;
 
         const tr = document.createElement('tr')
         tr.innerHTML = `
-       <tr>${i}</tr>
+       <tr>${i + 1}</tr>
        
        <td>${name}</td>
 
@@ -20,7 +20,11 @@ function display(allPlayer) {
 
     }
 }
+
+
 function addToPlayer(element) {
+
+    element.addToPlayer = true;
     // console.log(element.parentNode.parentNode.children[0])
     const playerName = element.parentNode.parentNode.children[0].innerText;
     // console.log(playerName);
@@ -36,18 +40,4 @@ function addToPlayer(element) {
     display(playerArray);
 }
 
-// budget calculation 
-function inputField() {
 
-}
-
-document.getElementById('calculate').addEventListener('click', function () {
-
-    const perPlayerField = inputField('per-player-field');
-
-    const playerAmount = perPlayerField * 5;
-
-    const playerTotal = setElementById('player-expense', playerAmount);
-
-
-})
