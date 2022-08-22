@@ -3,7 +3,7 @@ const playerArray = [];
 function display(allPlayer) {
 
     const body = document.getElementById("name-update");
-    body.innerHTML = "";
+    body.textContent = "";
 
     for (let i = 0; i < 5; i++) {
         const name = playerArray[i].playerName;
@@ -18,7 +18,10 @@ function display(allPlayer) {
 
 
 function addToPlayer(element) {
+    element.style.backgroundColor = 'gray';
     element.addToPlayer = true;
+
+
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const playerObj = {
         playerName: playerName
@@ -30,8 +33,6 @@ function addToPlayer(element) {
         return false;
 
     }
-
-
     display(playerArray);
 
 
