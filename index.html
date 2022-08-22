@@ -40,7 +40,7 @@
     </header>
     <!-- header section end  -->
 
-    <main class="bg-gray-600 py-12 px-8">
+    <main class="bg-gray-900 py-12 px-8">
         <section class="text-center ">
 
             <div class="grid grid-cols-2 gap-4">
@@ -57,7 +57,7 @@
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="btn btn-primary px-9 py-2" onclick=" addToPlayer(this)">Select</button>
+                                <button class="btn btn-primary px-9 py-2" onclick="addToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="btn btn-primary px-9 py-2" onclick=" addToPlayer(this)">Select</button>
+                                <button class="btn btn-primary px-9 py-2" onclick="addToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="btn btn-primary px-9 py-2" onclick=" addToPlayer(this)">Select</button>
+                                <button class="btn btn-primary px-9 py-2" onclick="addToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -147,6 +147,7 @@
                             </div>
                             <div class="card-actions text-white">
                                 <button class="btn btn-primary px-9 py-2" onclick=" addToPlayer(this)">Select</button>
+
                             </div>
                         </div>
                     </div>
@@ -155,38 +156,38 @@
                 </div>
                 <!-- selected part   -->
                 <div class="grid grid-rows-2 gap-4  px-20">
-                    <div class="card shadow-xl">
-                        <h2 class="text-white font-semibold">Selected - V</h2>
-                        <div>
-                            <table>
-                                <tbody id="name-update">
-                                </tbody>
-                            </table>
+                    <div class="card shadow-xl bg-black">
+                        <h2 class="text-white font-semibold pt-8">Selected - 5</h2>
+
+                        <div id="name-update" class="text-white pt-5">
+
                         </div>
+
                     </div>
-                    <div class="text-center items-center card shadow-xl">
+                    <div class="card bg-black text-center items-center  shadow-xl">
                         <h3 class="text-white font-semibold">Budget</h3>
                         <div class="mt-2">
-                            <p class="inline">Per Player </p>
+                            <p class="inline text-white">Per Player </p>
                             <input id="per-player-field" class="bg-gray-300 w-6/12" type="text">
                         </div>
                         <button id="calculate"
                             class="text-white bg-blue-400 mt-3 px-3 py-1 text-xl rounded">Calculate</button>
-                        <p class="text-xl font-semibold mt-2">Player Expenses : $<span id="player-expense">00</span></p>
+                        <p class="text-xl font-semibold mt-2 text-white">Player Expenses : $<span
+                                id="player-expense">00</span></p>
 
                         <div class="mt-2">
-                            <p class="inline">Manager </p>
+                            <p class="inline text-white">Manager </p>
                             <input id="manager" class="bg-gray-300 w-6/12" type="text">
                         </div>
                         <div class="mt-2">
-                            <pclass="inline">Coach </pclass=>
-                                <input id="coach" class="bg-gray-300 w-6/12" type="text">
+                            <p class="inline text-white">Coach </p>
+                            <input id="coach" class="bg-gray-300 w-6/12" type="text">
 
                         </div>
                         <button id="total-calculate" class="text-white bg-blue-400 mt-3 px-3 py-1 text-xl rounded">Total
                             Calculate</button>
 
-                        <p class="text-xl font-semibold mt-2 
+                        <p class="text-xl font-semibold mt-2 text-white
                         ">Total: <span class="text-orange-600">$</span><span id="final-total"
                                 class="text-orange-600">00</span></p>
 
@@ -196,7 +197,7 @@
         </section>
     </main>
 
-    <footer class="py-10 bg-gray-400">
+    <footer class="py-10 bg-gray-900">
         <hr>
         <p class="text-white text-center pt-10 pb-5">Copyright @ 2022 All Rights Reserved.
         </p>
