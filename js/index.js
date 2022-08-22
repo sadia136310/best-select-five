@@ -1,6 +1,10 @@
 const playerArray = [];
 
 function display(allPlayer) {
+    // console.log(allPlayer);
+    if (allPlayer.length > 5) {
+        allPlayer.pop();
+    }
 
     const body = document.getElementById("name-update");
     body.textContent = "";
@@ -21,7 +25,6 @@ function addToPlayer(element) {
     element.style.backgroundColor = 'gray';
     element.addToPlayer = true;
 
-
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const playerObj = {
         playerName: playerName
@@ -30,10 +33,11 @@ function addToPlayer(element) {
 
     if (playerArray.length > 5) {
         alert('You didnot add more than five');
-        return false;
-
     }
+
+
     display(playerArray);
+
 
 
 }
