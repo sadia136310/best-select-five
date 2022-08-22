@@ -159,43 +159,41 @@
 
                 </div>
                 <!-- selected part   -->
-                <div class="grid grid-rows-2 gap-4">
-                    <div>
+                <div class="grid grid-rows-2 gap-4  px-20">
+                    <div class="card shadow-xl">
                         <h2 class="text-white font-semibold">Selected - V</h2>
-
                         <div>
                             <table>
-                                <thead>
-                                </thead>
                                 <tbody id="name-update">
-
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="text-center items-center">
+                    <div class="text-center items-center card shadow-xl">
                         <h3 class="text-white font-semibold">Budget</h3>
                         <div class="mt-2">
                             <p class="inline">Per Player </p>
-                            <input id="income-field" class="bg-gray-300 w-3/12" type="text">
+                            <input id="per-player-field" class="bg-gray-300 w-6/12" type="text">
                         </div>
                         <button id="calculate"
                             class="text-white bg-blue-400 mt-3 px-8 py-1 text-xl rounded">Calculate</button>
-                        <p class="text-xl font-semibold mt-2">Player Expenses : $<span>00</span></p>
+                        <p class="text-xl font-semibold mt-2">Player Expenses : $<span id="player-expense">00</span></p>
 
                         <div class="mt-2">
                             <p class="inline">Manager </p>
-                            <input class="bg-gray-300 w-3/12" type="text">
+                            <input id="manager" class="bg-gray-300 w-6/12" type="text">
                         </div>
                         <div class="mt-2">
                             <pclass="inline">Coach </pclass=>
-                                <input class="bg-gray-300 w-3/12" type="text">
+                                <input id="coach" class="bg-gray-300 w-6/12" type="text">
 
                         </div>
-                        <button class="text-white bg-blue-400 mt-3 px-3 py-1 text-xl rounded">Total
+                        <button id="total-calculate" class="text-white bg-blue-400 mt-3 px-3 py-1 text-xl rounded">Total
                             Calculate</button>
 
-                        <p class="text-xl font-semibold mt-2">Total: $<span>00</span></p>
+                        <p class="text-xl font-semibold mt-2 
+                        ">Total: <span class="text-orange-600">$</span><span id="final-total"
+                                class="text-orange-600">00</span></p>
 
                     </div>
                 </div>
@@ -209,6 +207,8 @@
         </p>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/total.js"></script>
 </body>
 
 </html>
