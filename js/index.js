@@ -18,19 +18,21 @@ function display(allPlayer) {
 
 
 function addToPlayer(element) {
-
     element.addToPlayer = true;
-
     const playerName = element.parentNode.parentNode.children[0].innerText;
-
-
     const playerObj = {
         playerName: playerName
     }
+    playerArray.push(playerObj);
 
-    playerArray.push(playerObj)
+    if (playerArray.length > 5) {
+        alert('You didnot add more than five');
+        return false;
+
+    }
 
 
     display(playerArray);
+
 
 }
