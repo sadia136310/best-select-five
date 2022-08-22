@@ -46,44 +46,45 @@
             <div class="grid grid-cols-2 gap-4">
                 <div class="grid grid-cols-3 gap-4">
 
-
+                    <!-- player-1 -->
                     <div class="card w-50 h-90 bg-base-100 shadow-xl">
                         <figure><img class="h-40 w-full" src="./players/player-1.webp" alt="Shoes" /></figure>
                         <div class="card-body bg-black items-center">
-                            <h6 class="card-title text-white">Lionel Messi</h6>
+                            <h2 class="card-title text-white">Lionel Messi</h2>
                             <div class="flex text-xs text-gray-600 text-center">
                                 <p>36 Goals </p>
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="bg-blue-400 px-9 py-2 rounded">Select</button>
+                                <button class="bg-blue-400 px-9 py-2 rounded"
+                                    onclick=" addToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
+                    <!-- player-2 -->
 
-
-                    <div class="card w-50 h-90 bg-base-100 shadow-xl">
-                        <figure><img class="h-40 w-full" src="./players/player-2.jpeg" alt="Shoes" /></figure>
+                    <div class=" card w-50 h-90 bg-base-100 shadow-xl">
+                        <figure><img class="h-40 w-full" src="./players/player-2.jpeg" alt="Shoes" />
+                        </figure>
                         <div class="card-body items-center text-center bg-black">
                             <h2 class="card-title text-white">Neymar <br> Jr</h2>
                             <div class="flex text-xs text-gray-600">
                                 <p>36 Goals </p>
-
                                 <p>.</p>
-
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="bg-blue-400 px-9 py-2 rounded">Select</button>
+                                <button class="bg-blue-400 px-9 py-2 rounded "
+                                    onclick=" addToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
-
+                    <!-- player-3 -->
                     <div class="card w-50 h-90 bg-base-100 shadow-xl">
                         <figure><img class="h-40 w-full" src="./players/player-3.jpg" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center bg-black">
-                            <h5 class="card-title text-white">Kylian Mbappé</h5>
+                            <h2 class="card-title text-white">Kylian Mbappé</h2>
                             <div class="flex text-xs text-gray-600">
                                 <p>36 Goals </p>
 
@@ -92,10 +93,13 @@
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="bg-blue-400 px-9 py-2 rounded">Select</button>
+                                <button class="bg-blue-400 px-9 py-2 rounded"
+                                    onclick=" addToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- player-4 -->
                     <div class="card w-50 h-90 bg-base-100 shadow-xl">
                         <figure><img class="h-40 w-full" src="./players/player-4.jpg" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center bg-black">
@@ -109,12 +113,13 @@
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="bg-blue-400 px-9 py-2 rounded">Select</button>
+                                <button class="bg-blue-400 px-9 py-2 rounded"
+                                    onclick=" addToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
 
-
+                    <!-- player-5 -->
 
                     <div class="card w-50 h-90 bg-base-100 shadow-xl">
                         <figure><img class="h-40" src="./players/player-5.jpg" alt="Shoes" /></figure>
@@ -128,10 +133,13 @@
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="bg-blue-400 px-9 py-2 rounded">Select</button>
+                                <button class="bg-blue-400 px-9 py-2 rounded"
+                                    onclick=" addToPlayer(this)">Select</button>
                             </div>
                         </div>
+
                     </div>
+                    <!-- player-6 -->
                     <div class="card w-50 h-90 bg-base-100 shadow-xl">
                         <figure><img class="h-40 w-full" src="./players/player-6.jpg" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center bg-black">
@@ -142,7 +150,8 @@
                                 <p>120 Assist</p>
                             </div>
                             <div class="card-actions text-white">
-                                <button class="bg-blue-400 px-9 py-2  rounded">Select</button>
+                                <button class="bg-blue-400 px-9 py-2  rounded"
+                                    onclick=" addToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -153,6 +162,16 @@
                 <div class="grid grid-rows-2 gap-4">
                     <div>
                         <h2 class="text-white font-semibold">Selected - V</h2>
+
+                        <div>
+                            <table>
+                                <thead>
+                                </thead>
+                                <tbody id="name-update">
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="text-center items-center">
                         <h3 class="text-white font-semibold">Budget</h3>
@@ -173,7 +192,7 @@
                                 <input class="bg-gray-300 w-3/12" type="text">
 
                         </div>
-                        <button class="text-white bg-blue-400 mt-3 px-8 py-1 text-xl rounded">Total
+                        <button class="text-white bg-blue-400 mt-3 px-3 py-1 text-xl rounded">Total
                             Calculate</button>
 
                         <p class="text-xl font-semibold mt-2">Total: $<span>00</span></p>
